@@ -1,0 +1,50 @@
+# Python
+__pycache__/
+*.pyc
+*.egg-info/
+
+# Model checkpoints (keep only best.pt)
+runs/*/weights/epoch*.pt
+runs/*/weights/last.pt
+
+# Downloaded models (accidental)
+yolo*.pt
+
+# Training artifacts
+runs/*/train_batch*.jpg
+runs/*/val_batch*.jpg
+runs/*/labels.jpg
+
+# Dataset (too large, download separately)
+train/images/
+train/labels/
+test/images/
+
+# Data splits (symlinks, will be regenerated)
+train_split/
+val_split/
+
+# Predictions (intermediate outputs)
+predictions/
+predictions_opt/
+
+# Visualization
+vis/
+
+# Zip archives
+*.zip
+
+# IDE
+.vscode/
+.idea/
+
+# Conda/Python venv
+venv/
+.env/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# YOLO cache
+*.cache

@@ -1,0 +1,13 @@
+# YOLO Dataset Configuration
+# Competition: 高分辨率遥感影像变电站识别挑战赛
+# Task: Substation detection in high-resolution remote sensing images
+
+path: /home/ubuntu/workspace/20260706_SiChuan_MeiShan_Substation_Competition
+train: train_split/images
+val: val_split/images
+
+# Single class: substation
+names:
+  0: substation
+
+nc: 1
